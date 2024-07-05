@@ -61,15 +61,6 @@ main {
   background-color: white;
 }
 
-.grid-1-col-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 100px;
-}
-
 .img-responsive {
   width: 100%;
   display: block;
@@ -94,6 +85,22 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
 main p {
   font-style: normal;
   font-weight: 400;
@@ -103,12 +110,71 @@ main p {
   opacity: 0.7;
 }
 
+.learn-more-card-btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
+.grid-1-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.middle-section {
+  background: #f8f8f8;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-2-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.grid-3-col {
+.grid-3-col-3 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
@@ -154,7 +220,7 @@ footer p {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -166,5 +232,18 @@ footer p {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid-1-col-2,
+  .grid-2-col-3,
+  .grid-3-col-3 {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px !important;
+  }
+
+  .card-header img {
+    display: none;
   }
 }
