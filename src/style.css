@@ -169,9 +169,19 @@ main p {
   padding: 0 30px 30px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  padding: 100px;
 }
 
 .grid-3-col-3 {
@@ -233,9 +243,15 @@ footer p {
   header h3 {
     font-size: 12px;
   }
+
+  main h3 {
+    font-size: 36px;
+    line-height: 1;
+  }
   .grid-1-col-2,
   .grid-2-col-3,
-  .grid-3-col-3 {
+  .grid-3-col-3,
+  .mini-grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
@@ -245,5 +261,14 @@ footer p {
 
   .card-header img {
     display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+
+  blockquote {
+    margin: 0 auto;
+    display: block;
   }
 }
