@@ -61,6 +61,9 @@ main {
   background-color: white;
 }
 
+.img-first-section {
+  filter: brightness(80%) grayscale(35%);
+}
 .img-responsive {
   width: 100%;
   display: block;
@@ -188,6 +191,30 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.fourth-section {
+  background: #f8f8f8;
+}
+
+table {
+  width: 100%;
+  padding: 30px;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+th {
+  background-color: #272044;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #272044;
+  background: white;
 }
 
 footer {
